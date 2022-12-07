@@ -58,7 +58,7 @@ jobs:
       - name: docer push
         run: | 
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/was:v${{ env.RELEASE_VERSION }}
-          docker push ${{ secrets.DOCKERHUB_USERNAME }}/was:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/was:lates
           
       - name: Get GKE Credentials
         uses: google-github-actions/get-gke-credentials@v0.7.0
